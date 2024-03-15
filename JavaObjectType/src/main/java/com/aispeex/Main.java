@@ -82,5 +82,16 @@ public class Main {
 
         ret = Utils.toString(temperatures);
         System.out.printf("%s\n", ret);
+
+        ret = Utils.getStackTraceString(new IllegalArgumentException("参数错误异常"));
+        System.out.printf("%s\n", ret);
+
+        System.out.printf("%s\n", Utils.equals("a", "a"));
+        System.out.printf("%s\n", Utils.equals("as", "b"));
+        System.out.printf("%s\n", Utils.equals(null, "b"));
+        System.out.printf("%s\n", Utils.equals("a", null));
+        System.out.printf("%s\n", Utils.equals(null, null));
+        System.out.printf("%s\n", Utils.equals("33", "33a"));
+        System.out.printf("%s\n", Utils.equals("apple", "apple"));
     }
 }
