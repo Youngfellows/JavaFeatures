@@ -20,7 +20,7 @@ public class StackTraceDemo {
             System.out.println("文件名file: " + stackTraceElement.getFileName());
             System.out.println("方法所在的行号: " + stackTraceElement.getLineNumber());
             System.out.println();
-            
+
         }
     }
 
